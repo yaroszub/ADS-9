@@ -6,8 +6,8 @@
 #include <vector>
 #include "tree.h"
 int main() {
-    // Демонстрация работы для {1,2,3}
-    std::vector<char> demo = {'1','2','3'};
+    // Демонстрация работы для {1, 2, 3}
+    std::vector<char> demo = {'1', '2', '3'};
     PMTree demoTree(demo);
     std::cout << "Все перестановки:\n";
     auto perms = getAllPerms(demoTree);
