@@ -1,7 +1,7 @@
 // Copyright 2022 NNTU-CS
 #include <algorithm>
-#include "tree.h"
 #include <vector>
+#include "tree.h"
 PMTree::PMTree(const std::vector<char>& src) : base(src) {
     top = new Node(0);
     std::vector<char> sorted = src;
