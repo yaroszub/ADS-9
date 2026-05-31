@@ -26,7 +26,7 @@ void PMTree::destroyTree(Node* node) {
     delete node;
 }
 static void collectPerms(PMTree::Node* node, std::vector<char>& current,
-                         std::vector<std::vector<char>>& result, int depth, int total) {
+        std::vector<std::vector<char>>& result, int depth, int total) {
     if (depth == total) {
         result.push_back(current);
         return;
@@ -56,7 +56,7 @@ size_t fact(int n) {
 std::vector<char> getPerm2(PMTree& obj, int pos) {
     int n = obj.base.size();
     if (pos < 1 || static_cast<size_t>(pos) > fact(n)) return {};
-    std::vector<char> result;
+std::vector<char> result;
     int remainder = pos - 1;
     PMTree::Node* cur = obj.top;
     for (int step = 0; step < n; ++step) {
